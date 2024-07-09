@@ -45,6 +45,19 @@ router.get('/:lyricsId', async (req, res) => {
     }
 });
 
+router.get('/:lyricsId/edit', async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.session.user._id);
+        const lyrics = currentUser.lyrics.id(req.params.lyricsId);
+        res.render('lyrics/edit.ejs', {
+            lyrics: lyrics, 
+        });
+    } catch (error) {
+        console.log(error);
+        res.redirect('/')
+    }
+});
+
 router.delete('/:lyricsId', async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -55,7 +68,9 @@ router.delete('/:lyricsId', async (req, res) => {
         console.log(error);
         res.redirect('/')
     }
-})
+});
+
+
 
 
 module.exports = router;

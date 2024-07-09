@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= lyrics.title %></title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Edit <%= lyrics.title %> by <%= lyrics.artist %></h1>
+    <form action="/users/<%= user._id %>/lyrics/<%= lyrics._id %>?_method=PUT"
+        method="POST"
+    >    
+    <input type="text" name="title" id="title" value="<%= lyrics.title %>">
+    <input type="text" name="artist" id="artist" value="<%= lyrics.artist %>">
+    <textarea name="lyrics" id="lyrics"><%= lyrics.lyrics %></textarea>
+</body>
+</html>
