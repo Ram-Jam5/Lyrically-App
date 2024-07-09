@@ -24,6 +24,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  lyrics: [lyricSchema]
 });
 
 const User = mongoose.model('User', userSchema);
