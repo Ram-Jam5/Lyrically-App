@@ -12,7 +12,9 @@
     <ul>
         <% lyrics.forEach((lyric)=> { %>
             <li>
+                <a href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
                 <%= lyric.title %> by <%= lyric.artist %>: <%= lyric.lyrics %>
+                </a>
             </li>
             <% }) %>
     </ul>

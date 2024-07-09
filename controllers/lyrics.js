@@ -19,6 +19,19 @@ router.get('/new', async (req, res) => {
     res.render('lyrics/new.ejs')
 })
 
+router.get('/:lyricsId', async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.session.user._id);
+        const lyrics = currentUser.lyrics.id(req.params.lyricsId);
+        res.render('lyrics/show.ejs',{
+            lyrics: lyrics,
+        });
+    } catch (error) {
+        console.log(error)
+        res.redirect('/')
+    }
+});
+
 router.post('/', async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
