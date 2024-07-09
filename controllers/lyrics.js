@@ -31,6 +31,13 @@ router.post('/', async (req, res) => {
         res.redirect('/')
     }
 });
+router.get('/users', async (req, res) => {
+    const allUsers = await User.find();
+    console.log(allUsers)
+    res.render('users/index.ejs', {
+        user: allUsers,
+    })
+})
 
 router.get('/:lyricsId', async (req, res) => {
     try {
