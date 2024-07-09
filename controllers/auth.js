@@ -51,6 +51,7 @@ router.post('/sign-in', async (req, res) => {
     const userInDatabase = await User.findOne({ username: req.body.username });
     if (!userInDatabase) {
       return res.send('Login failed. Please try again.');
+      
     }
   
     // There is a user! Time to test their password with bcrypt

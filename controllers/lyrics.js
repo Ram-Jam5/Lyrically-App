@@ -39,6 +39,15 @@ router.get('/users', async (req, res) => {
     })
 })
 
+router.get('/users/:userId', async (req, res) => {
+    const currentUser = await User.findById(req.params.userId);
+    const lyrics = currentUser.lyrics
+    res.render('users/show.ejs', {
+        user: currentUser,
+        lyrics: lyrics,
+    });
+});
+
 router.get('/:lyricsId', async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
