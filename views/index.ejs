@@ -6,18 +6,8 @@
   <title>Lyrically</title>
 </head>
 <body>
-  <% if (user) { %>
-    <h1>Welcome to Lyrically, <%= user.username %>!</h1>
-    <p>
-      <a href="/auth/sign-out">Sign out</a>
-    </p>
-  <% } else { %>
-    <h1>Welcome to Lyrically, guest.</h1>
-    <p>
-      <a href="/auth/sign-up">Sign up</a> or
-      <a href="/auth/sign-in">Sign in</a>.
-    </p>
-  <% } %>
-  
+  <%- include('./partials/_navbar.ejs') %>
+ <h1>Lyrically</h1>
+ <p>An application for adding your favorite song lyrics!</p>
 </body>
 </html>
