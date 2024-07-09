@@ -9,6 +9,11 @@
     <%- include('../partials/_navbar.ejs') %>
     <h1><%= lyrics.title %> by <%= lyrics.artist %></h1>
     <p>Lyrics: <%= lyrics.lyrics %></p>
-    
+    <form
+        action="/users/<%=user._id%>/lyrics/<%= lyrics._id %>?_method=DELETE"
+        method="POST"
+    >
+        <button type="submit">Delete this lyric</button>
+    </form>
 </body>
 </html>
