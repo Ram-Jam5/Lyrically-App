@@ -58,6 +58,19 @@ router.get('/:lyricsId/edit', async (req, res) => {
     }
 });
 
+router.put('/:lyricsId', async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.session.user._id);
+        const lyrics = currentUser.lyrics.id(req.params.lyricsId);
+        lyrics.set(req.body);
+        await currentUser.save();
+        res.redirect(`/users/${currentUser._id}/lyrics/${req.params.lyricsId}`)
+    } catch (error) {
+        console.log(error)
+        res.redirect('/')
+    }
+});
+
 router.delete('/:lyricsId', async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
