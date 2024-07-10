@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -7,11 +8,34 @@ body {
     width: 100vw;
     background-color: #9ac2ef;
 }
+h1{
+  color: #ce4866;
+  size: 3.6em;
+}
+form{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffbd59;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 5px 6px #f47b5b;
+  margin: 20px 10px;
+}
+.index-body {
+  background-image: url(https://static.scientificamerican.com/dam/m/25923be7c4b3ad4d/original/GettyImages-693774596_WEB.jpg?w=600);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vh;
+  color: white;
+}
 .main-header {
     font-weight: bold;
     color: white;
-    font-size: 5.6em;
-    margin: -160px 20px 0 20px;
+    font-size: 3.2em;
+    margin: 0px 20px 0 20px;
   }
   
   .subheader {
@@ -64,7 +88,176 @@ body {
   .signin-link:hover {
     background-color: #ffffff;
   }
-  
-  p{
-    color: red;
+  .signin-container, .signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
+  
+  h1 {
+    color: #1c2e5b;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20em;
+    height: 50%;
+    background-color: #f6e7e7;
+    padding: 30px 40px 20px 40px;
+    border-radius: 20px;
+    color: #4b598e;
+    font-weight: bold;
+  }
+  
+  input {
+    border: 1px solid rgb(182, 182, 182);
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  button{
+    padding: 10px;
+    background-color: #ce4866;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  .all-lyrics-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-lyrics-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+  }
+.add-lyrics-link{
+  padding: 10px;
+  background-color: #ce4866;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1em;
+  padding: 2px 25px;
+  text-decoration: none;
+}
+.add-lyrics-link:hover{
+  background-color: #e84a6c;
+}
+ul {
+  list-style: none;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul>a {
+  text-decoration: none;
+  color: #1c2e5b;
+  width: 50%;
+  background-color: #f6e7e7;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+ul>a:hover {
+  background-color: #4b598e;
+  color: white;
+}
+.lyrics-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  padding: 20px 0;
+}
+.delete-form {
+  padding: 0;
+  box-shadow: 0 0;
+  background-color: transparent;
+  height: 50px;
+  margin: 0 20px 0 0;
+  min-height: 100%;
+}
+.delete-button {
+  background-color: #f47b5b;
+  text-transform: uppercase;
+  padding: 40px 15px;
+  width: 70%;
+  height: 100%; 
+  font-size: 1.3em;
+  margin: 0;
+  min-height: 100%;
+}
+.edit-link {
+  text-decoration: none;
+}
+
+.edit-text {
+  background-color: #3f6a51;
+  text-transform: uppercase;
+  padding: 40px 15px;
+  font-size: 1.3em;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 70%;
+  height: 50px;
+}
+
+.delete-button:hover {
+  background-color: #ffbd59;
+}
+
+.delete-button:active {
+  background-color: rgb(217, 108, 78);
+}
+
+.edit-text:hover {
+  background-color: #769642;
+}
+
+.edit-text:active {
+  background-color: #2d4d3a;
+  background-color: rgb(217, 108, 78);
+}
+.lyrics-cards{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  width: 80px;
+  height: 180px;
+  background-color: white;
+  margin: 10px 15px;
+  padding: 30px 50px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid #ffbd59;
+}
+.lyrics-cards:hover {
+  border: 4px solid #f47b5b
+}

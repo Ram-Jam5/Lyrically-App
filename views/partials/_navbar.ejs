@@ -1,11 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrically</title>
+    <link rel="stylesheet" href="/stylesheets/partials"> 
+</head>
 <nav>
     <% if (user) { %>
-     <a href="/users/<%=user._id %>/lyrics">Your Lyrics</a>
-     <a href="/auth/sign-out">Sign Out</a>
-     <a href="/users/:users/lyrics/users">Explore our Community</a>
+        <div class="navbar">
+            <h1 id="nav-header">Lyrically</h1>
+           <div class="nav-links">
+               <a class="authlink" href="/users/<%=user._id %>/lyrics">Your Lyrics</a>
+               <a class="authlink" href="/auth/sign-out">Sign Out</a>
+               <a class="authlink" href="/users/:users/lyrics/users">Explore our Community</a>
+            </div>
+        </div>
     <% } else { %>
-            <a href="/auth/sign-in">Sign In</a>
-            <a href="/auth/sign-up">Sign Up</a>
-            <a href="/users/:users/lyrics/users">Explore our Community</a>
+        <div class="navbar">
+            <h1 id="nav-header">Your Lyrics</h1>
+            <div class="nav-links">
+                <a class="authlink" href="/auth/sign-in">Sign In</a>
+                <a class="authlink" href="/auth/sign-up">Sign Up</a>
+                <a class="authlink" href="/users/:users/lyrics/users">Explore our Community</a>
+            </div>
+        </div>
         <% } %>
 </nav>

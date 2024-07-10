@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=lyrics.title%></title>
-    <link href="/public/stylesheets/style.css" rel="stylesheets" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1><%= lyrics.title %> by <%= lyrics.artist %></h1>
-    <p>Lyrics: <%= lyrics.lyrics %></p>
-    <a href="/users/<%= user._id %>/lyrics/<%= lyrics._id %>/edit">
-        Edit this Lyric
-    </a>
-    <form
+    <div class="lyrics-details">
+        <h1><%= lyrics.title %> by <%= lyrics.artist %></h1>
+        <p>Lyrics: <%= lyrics.lyrics %></p>
+    </div>
+    <div class="lyrics-actions">
+        <form
+        class="delete-lyric"
         action="/users/<%=user._id%>/lyrics/<%= lyrics._id %>?_method=DELETE"
         method="POST"
-    >
+        >
         <button type="submit">Delete this lyric</button>
     </form>
+    <a class="edit-link" href="/users/<%= user._id %>/lyrics/<%= lyrics._id %>/edit">
+        <div class="edit-text">Edit <%= lyrics.title %></div>
+    </a>
+</div>
 </body>
 </html>
