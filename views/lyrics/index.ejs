@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <div class="all-lyrics-header">
+    <div class="index-header-div">
         <h1>Your Lyrics</h1>
         <a class="add-lyrics-link" href="/users/<%=user._id%>/lyrics/new">Add a Lyric</a>
     </div>
@@ -15,8 +15,18 @@
         <ul>
             <% lyrics.forEach(lyric=> { %>
                 <li>
-                    <a class="lyrics-cards" href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
-                        <%= lyric.title %> by <%= lyric.artist %>: <%= lyric.lyrics %>
+                    <a class="lyrics-cards-container" href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
+                      <div class="about-song">
+                          <div class="cards-title">
+                              <%= lyric.title %>
+                            </div>
+                            <div class="cards-artist">
+                                <%= lyric.artist %>
+                            </div> 
+                        </div>
+                        <div class="lyrics-container">
+                            : <%= lyric.lyrics %>
+                        </div>
                     </a>
                 </li>
                 <% }) %>
