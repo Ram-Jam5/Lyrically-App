@@ -5,7 +5,7 @@
 * The Song's Title
 * The Artist's Name
 * The lyrics you'd like to add.
-### As simple as that you can store all of your favorite song lyrics in one simple place! You can click on the explore our community link to see the other users in our community as well as what they have posted! Try it out for yourself on [Lyrically]()
+### As simple as that you can store all of your favorite song lyrics in one simple place! You can click on the explore our community link to see the other users in our community as well as what they have posted! Try it out for yourself on [Lyrically](https://lyrically-app-2d01e998a2af.herokuapp.com/)
 ### Technologies used: Mongoose, Express, Node.Js
 ### Next Steps: Add in dropdown box for users to also add a Genre to their form. Genre's will have color coded flair at the top of the card and will allow for users to sort by Genre. Further implementations such as likes and commments on cards will be coming in the future.
 
