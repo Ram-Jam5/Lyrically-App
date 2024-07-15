@@ -8,11 +8,10 @@
 </head>
 <body>
     <%- include("../partials/_navbar.ejs") %>
-    
     <ul>
         <% lyrics.forEach(lyric=> { %>
             <li>
-                <a href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
+                <a class="users" href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
                 <%= lyric.title %> by <%= lyric.artist %>: <%= lyric.lyrics %>
                 </a>
             </li>

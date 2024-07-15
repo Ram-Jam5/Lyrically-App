@@ -9,7 +9,7 @@ body {
     background-color: #515a47;
 }
 h1{
-  color: #ce4866;
+  color: #c1c1c1;
   size: 3.6em;
 }
 form{
@@ -25,15 +25,15 @@ form{
   margin: 20px 10px;
 }
 .index-body {
-  background-image: url(https://static.scientificamerican.com/dam/m/25923be7c4b3ad4d/original/GettyImages-693774596_WEB.jpg?w=600);
-  background-size: cover;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
   width: 100vh;
   color: white;
 }
 .main-header {
     font-weight: bold;
-    color: white;
+    color: black;
     font-size: 3.2em;
     margin: 0px 20px 0 20px;
   }
@@ -97,10 +97,7 @@ form{
     height: 100%;
   }
   
-  h1 {
-    color: #C1C1C1;
-  }
-  /*A63D40*/
+ 
   form {
     display: flex;
     flex-direction: column;
@@ -129,6 +126,12 @@ form{
     margin: 15px 0;
     font-size: 1.1em;
   }
+  button:hover {
+    background-color: #1c2e5b;
+  }
+  button:active {
+    background-color: #0a122a;
+  }
   .all-lyrics-body{
     display: flex;
     flex-direction: row;
@@ -145,7 +148,7 @@ form{
   }
 .add-lyrics-link{
   padding: 10px;
-  background-color: #ce4866;
+  background-color: #a63d40;
   color: white;
   border-radius: 30px;
   border: none;
@@ -154,7 +157,10 @@ form{
   text-decoration: none;
 }
 .add-lyrics-link:hover{
-  background-color: #e84a6c;
+  background-color: #0a122a;
+}
+.add-lyrics-link:active {
+  background-color: #1c2e5b;
 }
 ul {
   list-style: none;
@@ -188,6 +194,7 @@ ul>a:hover {
   
   width: 100%;
   height: 130px;
+  margin: 40px;
   padding: 20px 0;
 }
 .delete-form {
@@ -253,14 +260,14 @@ ul>a:hover {
   height: 180px;
   background-color: #c1c1c1;
   margin: 10px 15px;
-  padding: 30px 50px;
+  padding: 40px 50px;
   border-radius: 15px;
   align-items: center;
   justify-content: space-between;
   border: 2.5px solid #0a122a;
 }
 .lyrics-cards-container:hover {
-  border: 4px solid #f47b5b
+  border: 4px solid #a63d40
 }
 .lyrics-cards-container:active {
   background-color: #a4cf5f67;
@@ -271,15 +278,16 @@ ul>a:hover {
   color: #151E3F;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-self: auto;
   align-content: flex-start;
   justify-content: space-between;
   align-self: flex-start;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin: 0;
+  padding: 0px;
 }
 .index-header-div {
   display: flex;
+  color: #a63d40;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
