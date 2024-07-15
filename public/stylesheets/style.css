@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background-color: #515a47;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #515a47;
 }
-h1{
+h1 {
   color: #c1c1c1;
   size: 3.6em;
 }
-form{
-  font-family: 'Open Sans', sans-serif;
+form {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,129 +24,126 @@ form{
   box-shadow: 5px 6px #0a122a;
   margin: 20px 10px;
 }
-.index-body {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vh;
-  color: white;
+p {
+  color: #c1c1c1;
 }
 .main-header {
-    font-weight: bold;
-    color: black;
-    font-size: 3.2em;
-    margin: 0px 20px 0 20px;
-  }
-  
-  .subheader {
-    margin: 0 20px 0 20px;
-    font-size: 1.4em;
-  }
-  
-  .index-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .auth-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 80px 0 0;
-    height: 100%;
-  }
-  
-  .signup-link, .signin-link{
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 8px 0;
-    border-radius: 25px;
-    width: 10em;
-    text-align: center;
-  }
-  
-  .signup-link {
-    background-color: #a63d40;
-    color: white;
-    margin: 0 0 20px 0;
-  }
-  
-  .signup-link:hover {
-    background-color: #ff5378;
-  }
-  
-  .signin-link {
-    background-color: #f6e7e7;
-    color: #1c2e5b;
-    margin: 20px 0 0 0;
-  }
-  
-  .signin-link:hover {
-    background-color: #ffffff;
-  }
-  .signin-container, .signup-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
- 
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 20em;
-    height: 50%;
-    background-color: #f6e7e7;
-    padding: 30px 40px 20px 40px;
-    border-radius: 20px;
-    color: #4b598e;
-    font-weight: bold;
-  }
-  
-  input {
-    border: 1px solid rgb(182, 182, 182);
-    padding: 8px;
-    border-radius: 10px;
-  }
-  
-  button{
-    padding: 10px;
-    background-color: #a63d40;
-    color: white;
-    border-radius: 30px;
-    border: none;
-    margin: 15px 0;
-    font-size: 1.1em;
-  }
-  button:hover {
-    background-color: #1c2e5b;
-  }
-  button:active {
-    background-color: #0a122a;
-  }
-  .all-lyrics-body{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .all-lyrics-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    width: 90%;
-  }
-.add-lyrics-link{
+  font-weight: bold;
+  color: black;
+  font-size: 2.2em;
+  margin: 0px 20px 0 20px;
+}
+
+.subheader {
+  margin: 0 20px 0 20px;
+  font-size: 1.4em;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 80px 0 0;
+  height: 100%;
+}
+
+.signup-link,
+.signin-link {
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 8px 0;
+  border-radius: 25px;
+  width: 10em;
+  text-align: center;
+}
+
+.signup-link {
+  background-color: #a63d40;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.signup-link:hover {
+  background-color: #ff5378;
+}
+
+.signin-link {
+  background-color: #f6e7e7;
+  color: #1c2e5b;
+  margin: 20px 0 0 0;
+}
+
+.signin-link:hover {
+  background-color: #ffffff;
+}
+.signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 50%;
+  background-color: #f6e7e7;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  color: #4b598e;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #a63d40;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+button:hover {
+  background-color: #1c2e5b;
+}
+button:active {
+  background-color: #0a122a;
+}
+.all-lyrics-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.all-lyrics-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 90%;
+}
+.add-lyrics-link {
   padding: 10px;
   background-color: #a63d40;
   color: white;
@@ -156,7 +153,7 @@ form{
   padding: 2px 25px;
   text-decoration: none;
 }
-.add-lyrics-link:hover{
+.add-lyrics-link:hover {
   background-color: #0a122a;
 }
 .add-lyrics-link:active {
@@ -168,21 +165,21 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-ul>a {
+ul > a {
   text-decoration: none;
   color: #1c2e5b;
   width: 50%;
   background-color: #f6e7e7;
   border-radius: 30px;
-  padding: 10px 20px;
-  margin: 15px 0;
+  padding: 0px 0px;
+  margin: 0;
   font-weight: bold;
   text-align: center;
 }
-ul>a:hover {
+ul > a:hover {
   background-color: #4b598e;
   color: white;
 }
@@ -191,7 +188,7 @@ ul>a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  
+
   width: 100%;
   height: 130px;
   margin: 40px;
@@ -210,7 +207,7 @@ ul>a:hover {
   text-transform: uppercase;
   padding: 40px 15px;
   width: 170px;
-  height: 170; 
+  height: 170;
   font-size: 1.3em;
   margin: 0;
   min-height: 100%;
@@ -234,7 +231,9 @@ ul>a:hover {
   width: 70%;
   height: 50px;
 }
-
+.lyrics-details {
+  color: #c1c1c1
+}
 .delete-lyric-button:hover {
   background-color: #ffbd59;
 }
@@ -251,39 +250,54 @@ ul>a:hover {
   background-color: #2d4d3a;
   background-color: rgb(217, 108, 78);
 }
-.lyrics-cards-container{
+.lyrics-cards-container {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: #151e3f;
-  width: 80px;
-  height: 180px;
+  width: 100px;
+  height: 200px;
   background-color: #c1c1c1;
   margin: 10px 15px;
-  padding: 40px 50px;
+  padding: 3.5em;
   border-radius: 15px;
   align-items: center;
   justify-content: space-between;
   border: 2.5px solid #0a122a;
 }
 .lyrics-cards-container:hover {
-  border: 4px solid #a63d40
+  border: 4px solid #a63d40;
 }
 .lyrics-cards-container:active {
   background-color: #a4cf5f67;
   border: 2.5px solid #ffbd59;
   color: gray;
 }
-.about-song{
-  color: #151E3F;
+.lyrics-cards-container-header {
+  color: #a63d40;
   display: flex;
   flex-direction: row;
-  align-self: auto;
-  align-content: flex-start;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  align-self: flex-start;
-  margin: 0;
-  padding: 0px;
+  margin: -40px -20px -40px;
+  padding: 0.75emem;
+  font-size: 0.7em;
+}
+.cards-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: -10px 15px 0 -20px;
+}
+.cards-artist{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: -10px -15px  0 20px;
+}
+.lyrics-container {
+  display: flex;
 }
 .index-header-div {
   display: flex;
@@ -307,4 +321,19 @@ ul>a:hover {
   padding: 10px;
   font-weight: bold;
   font-size: 1.2em;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: #c1c1c1;
+}
+.users>a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+.users>li:hover {
+  color: #a63d40;
 }

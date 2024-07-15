@@ -14,7 +14,7 @@
     <div class="all-lyrics-body">
         <ul>
             <% lyrics.forEach(lyric=> { %>
-                <li>
+                <li >
                     <a class="lyrics-cards-container" href="/users/<%= user._id %>/lyrics/<%= lyric._id %>">
                       <div class="lyrics-cards-container-header">
                           <div class="cards-title">
@@ -25,7 +25,7 @@
                             </div> 
                         </div>
                         <div class="lyrics-container">
-                            : <%= lyric.lyrics %>
+                             <%= lyric.lyrics %>
                         </div>
                     </a>
                 </li>

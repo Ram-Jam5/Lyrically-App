@@ -9,10 +9,10 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Explore Our Community</h1>
-    <ul>
+    <ul class="users">
         <% user.forEach(username => { %>
             <li>
-                <a href="/users/<%= username._id %>/lyrics/users/<%= username._id %>">
+                <a class="users" href="/users/<%= username._id %>/lyrics/users/<%= username._id %>">
                     <%= username.username %>    
                 </a>    
             </li>
